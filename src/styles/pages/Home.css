@@ -1,0 +1,151 @@
+.mainSite .top {
+    position: relative;
+}
+
+.mainSite .titleSite {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 120px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.scrolling p {
+    position: absolute;
+    right: 5%;
+    bottom: 30px;
+    font-size: 45px;
+    display: inline-block;
+}
+
+.scrolling img {
+    width: 20px;
+}
+
+.description {
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.description .left {
+    float: left;
+}
+
+
+.description p {
+    /* background-color: aquamarine; */
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.description .right {
+    /* background-color: blue; */
+    width: 40%;
+}
+
+.projects {
+    margin-left: 5%;
+    margin-top: 90px;
+    display: block;
+    /* background-color: red; */
+}
+
+.projects h1 {
+    font-size: 45px;
+}
+
+.projects p {
+    margin-top: 15px;
+    width: 30%;
+    font-size: 20px;
+}
+
+.linkMore {
+    float: right;
+    margin-right: 5%;
+    /* background-color: aqua; */
+    font-size: 20px;
+}
+
+.linkMore a {
+    text-decoration: none;
+    color: #000;
+}
+
+.linkMore a img {
+    transform: rotate(-90deg);
+}
+
+.cards {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.cards .card img {
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 32px;
+    display: block;
+}
+
+.cards .card h1 {
+    margin: 15px;
+}
+
+.cards .card p {
+    margin-left: 15px;
+}
+
+.led {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    height: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.led-text {
+    display: flex;
+    font-size: 45px;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+.led-text span {
+    color: aliceblue;
+    display: inline-block;
+    padding-right: 50px; /* отступ между копиями текста */
+}
+
+.contactMe {
+    text-align: center;
+    margin: 30px;
+}
+
+.contactMe h1 {
+    font-size: 45;
+    margin-bottom: 45px;
+}
+
+.contactMe a {
+    font-size: 20px;
+    background-color: #000;
+    color: aliceblue;
+    padding: 15px 30px;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}

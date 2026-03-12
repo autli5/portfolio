@@ -1,0 +1,51 @@
+.headerComponent {
+    padding: 0;
+}
+
+.headerComponent .top {
+    height: 60px;
+    margin: 15px 0;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerComponent .top h1 {
+    font-size: 45px;
+    margin: 0;
+}
+
+.headerComponent .bottom {
+    /* background-color: aquamarine; */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.navigateHeaderBottom {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 100px;
+    background-color: #000;
+}
+
+.navigateHeaderBottom li {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.navigateHeaderBottom li:hover {
+    background-color: #fff;
+    color: #000;
+}
+

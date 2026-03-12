@@ -1,7 +1,19 @@
-export default function Home() {
+import "../styles/components/Header.css";
+
+export default function Header() {
   return (
-    <div>
-      <h1>Шапка сайта</h1>
+    <div className="headerComponent container">
+      <div className="top">
+        <h1>Autli</h1>
+      </div>
+      <div className="bottom">
+        <ul className="navigateHeaderBottom">
+          <li>Главная</li>
+          <li>О нас</li>
+          <li>Услуги</li>
+          <li>Контакты</li>
+        </ul>
+      </div>
     </div>
-  )
+  );
 }

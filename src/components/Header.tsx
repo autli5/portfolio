@@ -8,12 +8,10 @@ export default function Header() {
       </div>
 
       <div className="bottom">
-        <ul className="navigateHeaderBottom">
+        {/* <ul className="navigateHeaderBottom">
           <li>Главная</li>
-          <li>О нас</li>
-          <li>Услуги</li>
-          <li>Контакты</li>
-        </ul>
+          <li>Обо мне</li>
+        </ul> */}
       </div>
     </div>
   );

@@ -87,6 +87,12 @@
     gap: 30px;
 }
 
+.cards .card {
+    /* background-color: aqua; */
+    border-radius: 32px;
+    padding: 5%;
+}
+
 .cards .card img {
     width: 100%;
     background-color: blueviolet;
@@ -100,6 +106,18 @@
 
 .cards .card p {
     margin-left: 15px;
+}
+
+.cards .card a {
+    display: inline-block;
+    border: 1px solid #000;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 5px 10px;
+    border-radius: 16px;
+    font-size: 20px;
+    margin-top: 15px;
+    color: #000;
 }
 
 .led {

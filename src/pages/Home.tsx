@@ -50,6 +50,7 @@ export default function Home() {
               <div className="info">
                 <h1>{project.name}</h1>
                 <p>{project.tag}</p>
+                <a href={project.link} target="_blank">Перейти</a>
               </div>
             </div>
           ))}

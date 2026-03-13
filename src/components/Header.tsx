@@ -6,6 +6,7 @@ export default function Header() {
       <div className="top">
         <h1>Autli</h1>
       </div>
+
       <div className="bottom">
         <ul className="navigateHeaderBottom">
           <li>Главная</li>

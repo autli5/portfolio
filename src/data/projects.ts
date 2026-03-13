@@ -11,10 +11,10 @@ export interface Project { // Интерфейс Project теперь здесь
 const projects: Project[] = [
   {
     id: "1",
-    name: "Project Name 1",
-    tag: "Tag 1",
+    name: "Ecommerce Website UI Template Design - Dark Theme (Community)",
+    tag: "Style Loom",
     image: card1,
-    link: "#"
+    link: "https://autli5.github.io/ecommerce/"
   },
   {
     id: "2",

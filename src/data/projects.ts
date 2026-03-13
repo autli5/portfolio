@@ -14,7 +14,7 @@ const projects: Project[] = [
     name: "Ecommerce Style Loom",
     tag: "Style Loom",
     image: card1,
-    link: "https://autli5.github.io/ecommerce/"
+    link: "https://autli5.github.io/style-loom/"
   }
 ];
 

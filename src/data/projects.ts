@@ -1,4 +1,5 @@
-import card1 from "../assets/card1.png";
+import styleLoom from "../assets/style-loom.png";
+import klothink from "../assets/klothink.png";
 
 export interface Project { // Интерфейс Project теперь здесь
   id: string;
@@ -13,8 +14,15 @@ const projects: Project[] = [
     id: "1",
     name: "Ecommerce Style Loom",
     tag: "Style Loom",
-    image: card1,
+    image: styleLoom,
     link: "https://autli5.github.io/style-loom/"
+  },
+  {
+    id: "2",
+    name: "Ecommerce klothink",
+    tag: "Klothink",
+    image: klothink,
+    link: "https://autli5.github.io/klothink/"
   }
 ];
 

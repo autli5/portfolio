@@ -4,6 +4,7 @@ import "../styles/pages/Home.css";
 import strelka from "../assets/strelka.svg";
 
 import projects from "../data/projects";
+import orders from "../data/orders";
 
 // Assuming Project interface is defined here or imported from a types file
 interface Project {
@@ -12,6 +13,13 @@ interface Project {
   tag: string;
   image: string; // This should be the type of 'card1' which is likely a string path
   link: string;
+}
+
+interface Order {
+  id: string;
+  name: string;
+  logo: string;
+  website: string;
 }
 
 
@@ -52,6 +60,19 @@ export default function Home() {
                 <p>{project.tag}</p>
                 <a href={project.link} target="_blank">Перейти</a>
               </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="orders">
+        <div className="container">
+          <h1>Заказы</h1>
+          {orders.map((order: Order) => (
+            <div className="order" key={order.id}>
+              <a href={order.website} target="_blank">
+                <img src={order.logo} alt="" />
+              </a>
             </div>
           ))}
         </div>

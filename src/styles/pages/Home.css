@@ -169,7 +169,7 @@
 }
 
 .contactMe h1 {
-    font-size: 45;
+    font-size: 45px;
     margin-bottom: 45px;
 }
 
@@ -185,4 +185,110 @@
 @keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
+}
+
+
+/* =======================
+   TABLET (<= 1024px)
+======================= */
+@media (max-width: 1024px) {
+
+    .mainSite .titleSite {
+        font-size: 80px;
+    }
+
+    .projects p {
+        width: 50%;
+    }
+
+    .description .right {
+        width: 50%;
+    }
+
+    .cards {
+        gap: 20px;
+    }
+}
+
+
+/* =======================
+   MOBILE (<= 768px)
+======================= */
+@media (max-width: 768px) {
+
+    /* Заголовок */
+    .mainSite .titleSite {
+        font-size: 42px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    /* Убираем стрелку */
+    .scrolling p {
+        display: none;
+    }
+
+    /* DESCRIPTION */
+    .description {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .description .right {
+        width: 100%;
+    }
+
+    /* PROJECTS */
+    .projects {
+        margin-left: 0;
+    }
+
+    .projects p {
+        width: 100%;
+    }
+
+    /* КАРТОЧКИ */
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cards .card img {
+        height: 220px;
+    }
+
+    /* ORDERS */
+    .orders .container {
+        padding: 0;
+    }
+
+    .orders .container .order {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .orders .container .order img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    /* LED */
+    .led-text {
+        font-size: 20px;
+    }
+
+    .led {
+        height: 40px;
+    }
+
+    /* CONTACT */
+    .contactMe h1 {
+        font-size: 28px;
+    }
+
+    .contactMe a {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
 }

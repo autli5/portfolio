@@ -47,9 +47,6 @@ export default function Home() {
       <div className="projects">
         <h1>Проекты</h1>
         <p>Как опытный создатель современных, удобных для пользователя веб-дизайнов и цифровых решений, я стремлюсь помочь вам в создании бренда вашей мечты.</p>
-        <div className="linkMore">
-          <a href="#">Узнать больше <img src={strelka} alt="" /></a>
-        </div>
 
         <div className="cards">
           {projects.map((project: Project) => ( // Explicitly typing 'project' here

@@ -85,7 +85,7 @@ export default function Home() {
 
       <div className="contactMe">
         <h1>Свяжись со мной!</h1>
-        <a href="#">autli@list.ru</a>
+        <a href="mailto:autli@list.ru">autli@list.ru</a>
       </div>
     </div>
   );

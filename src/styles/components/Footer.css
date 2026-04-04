@@ -1,0 +1,12 @@
+footer {
+    margin-top: 100px;
+}
+
+/* нижняя часть */
+footer .bottom {
+    border-top: 2px solid gray;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between; /* ключевая строка */
+    align-items: center;
+}

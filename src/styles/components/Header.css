@@ -1,0 +1,58 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #1f1f1f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Лого */
+.logo h1 {
+    color: white;
+    font-size: 20px;
+}
+
+/* Навигация */
+.nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #00ff88;
+}
+
+/* Кнопка */
+.contactMe {
+    background: linear-gradient(135deg, #00ff88, #00ffaa);
+    padding: 10px 18px;
+    border-radius: 12px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contactMe:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0,255,136,0.4);
+}

@@ -5,17 +5,8 @@ import "../styles/pages/Home.css"
 import github from "../assets/svg/github.svg"
 import email from "../assets/svg/email.svg"
 
-import website from "../assets/svg/website.svg"
-import pallete from "../assets/svg/pallete.svg"
-import ecommerce from "../assets/svg/ecommerce.svg"
-import mobile from "../assets/svg/mobile.svg"
-import seo from "../assets/svg/seo.svg"
-
-import styleLoom from "../assets/projects/style-loom.png"
-import klothink from "../assets/projects/klothink.png"
-import master from "../assets/projects/master.jpg"
-import zPlod from "../assets/projects/zPlod.jpg"
-import laserTag from "../assets/projects/laserTag.png"
+import services from "../data/services";
+import projects from "../data/projects";
 
 import avatar from "../assets/avatar/avatar.png"
 
@@ -29,81 +20,8 @@ export default function Home() {
         { name: 'TypeScript', icon: 'TS' },
     ];
 
-    const services = [
-        {
-            icon: website,
-            title: "Website Development",
-            desc: "Создание современных и адаптивных сайтов любой сложности."
-        },
-        {
-            icon: pallete,
-            title: "UI/UX Design",
-            desc: "Продуманные интерфейсы с акцентом на удобство пользователя."
-        },
-        {
-            icon: ecommerce,
-            title: "E-commerce",
-            desc: "Интернет-магазины с оплатой и системой управления."
-        },
-        {
-            icon: mobile,
-            title: "Mobile UI",
-            desc: "Адаптивные интерфейсы для мобильных устройств."
-        },
-        {
-            icon: seo,
-            title: "SEO",
-            desc: "Оптимизация сайта для поисковых систем."
-        },
-        {
-            icon: website,
-            title: "Support",
-            desc: "Поддержка и развитие проектов."
-        }
-    ];
-
     const [activeFilter, setActiveFilter] = useState("All");
 
-    const projects = [
-        {
-            title: "E-commerce",
-            category: "web",
-            image: `${styleLoom}`,
-            tech: ["Vite", "gh-pages"],
-            link: "https://autli5.github.io/style-loom/"
-        },
-        {
-            title: "klothink",
-            category: "web",
-            image: `${klothink}`,
-            tech: ["Vite", "gh-pages"],
-            link: "https://autli5.github.io/klothink/"
-        },
-        {
-            title: "Центр инструментов Мастер",
-            category: "Network Shop",
-            image: `${master}`,
-            tech: ["Django", "HTML", "CSS"],
-            link: "https://orentools.ru"
-            
-        },
-        {
-            title: "Запретный плод",
-            category: "Network Shop",
-            image: `${zPlod}`,
-            tech: ["Django", "HTML", "CSS"],
-            link: "https://z-plod.ru"
-            
-        },
-        {
-            title: "Лазер таг клуб Беркут",
-            category: "web",
-            image: `${laserTag}`,
-            tech: ["Django", "TypeScript", "Vite"],
-            link: "https://lasergame56.ru"
-            
-        }
-    ];
 
     // const filters = ["all", "web", "mobile", "design"];
     const filters = ["All"]

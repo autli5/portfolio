@@ -11,6 +11,14 @@ body {
   padding: 30px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
 /* ширина */
 ::-webkit-scrollbar {
     width: 8px;
@@ -30,4 +38,10 @@ body {
 /* hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #00ffaa;
+}
+
+span.name {
+    background: linear-gradient(90deg, #00ff88, #00ffaa);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }

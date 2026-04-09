@@ -1,0 +1,40 @@
+.about {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+/* заголовок по центру */
+.about h1 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+/* контейнер: текст слева, фото справа */
+.about .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+/* текст */
+.about .text {
+    flex: 1;
+    text-align: justify;
+    color: #aaa;
+    line-height: 1.7;
+}
+
+/* фото */
+.about .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about .image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+}

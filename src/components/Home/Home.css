@@ -1,0 +1,208 @@
+.home {
+    padding: 80px 0;
+    color: white;
+    min-height: 100vh;
+}
+
+/* статус */
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 8px 15px;
+    border-radius: 50px;
+
+    background: #111;
+    border: 1px solid #222;
+    margin-bottom: 20px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+
+    /* background: #00ff88; */
+    background: #ffea00;
+    /* background: #ff3b3b; */
+    border-radius: 50%;
+}
+
+/* welcome секция с двумя колонками */
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+/* текст слева */
+.welcome-text {
+    flex: 1;
+}
+
+/* аватар справа */
+.avatar {
+    /* background-color: aqua; */
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* аватар справа */
+}
+
+.avatar img {
+    width: 600px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+/* роль */
+.role {
+    font-size: 24px;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+/* описание */
+.desc {
+    max-width: 500px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* кнопки */
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.primary {
+    background: linear-gradient(135deg, #00ff88, #00ffaa);
+    color: black;
+}
+
+.primary:hover {
+    box-shadow: 0 0 20px rgba(0,255,136,0.4);
+}
+
+.outline {
+    border: 1px solid #00ff88;
+    color: #00ff88;
+}
+
+.outline:hover {
+    background: rgba(0,255,136,0.1);
+}
+
+.links {
+    /* background-color: aqua; */
+    margin-top: 30px;
+}
+
+.links a {
+    margin-right: 30px;
+}
+
+.links a img {
+    width: 30px;
+    height: 30px;
+}
+
+.stack .stackText {
+    margin: 30px 0;
+    color: gray;
+}
+
+.stack .list {
+    width: 100%;
+}
+
+.stack .list .card {
+    padding: 15px 20px;
+    border-radius: 120px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background: #111;
+    border: 1px solid #222;
+    display: inline-block;
+    color: white;
+}
+
+.stack .list .card .iconCard {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    /* HERO */
+    .welcome-container {
+        gap: 40px;
+    }
+    
+    .avatar img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .oval {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        /* ===== HERO ===== */
+    .welcome-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .welcome-text h1 {
+        font-size: 36px;
+    }
+
+    .avatar {
+        justify-content: center;
+    }
+
+    .avatar img {
+        width: 250px;
+    }
+
+    /* кнопки */
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    /* соц иконки */
+    .links {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .links a {
+        margin: 0;
+    }
+}

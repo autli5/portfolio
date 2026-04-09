@@ -11,9 +11,7 @@ export default function Services() {
                 <div className="services-header">
                     <p className="label">Сервисы</p>
 
-                    <h1>
-                        Что я <span className="name">предлагаю</span>
-                    </h1>
+                    <h1>Услуги</h1>
 
                     <div className="line"></div>
                 </div>

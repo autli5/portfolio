@@ -47,3 +47,11 @@ span.name {
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent;
 }
+
+.line {
+    width: 80px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background: linear-gradient(90deg, #00ff88, #00ffaa);
+}

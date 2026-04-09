@@ -30,9 +30,11 @@ export default function Home() {
             <section className="home" id="home">
                 <div className="container">
                     
-                    <div className="status">
-                        <span className="dot"></span>
-                        В разработке
+                    <div className="oval">
+                        <div className="status">
+                            <span className="dot"></span>
+                            В разработке
+                        </div>
                     </div>
 
                     <div className="welcome-container">

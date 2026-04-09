@@ -1,14 +1,6 @@
-import { useState } from "react";
 import "./Header.css";
-import langData from "../../data/language.json";
 
 export default function Header() {
-
-    const [lang, setLang] = useState<"ru" | "en">("ru");
-
-    const toggleLang = () => {
-        setLang(prev => (prev === "ru" ? "en" : "ru"));
-    };
 
     const scrollTo = (id: string) => {
         const el = document.getElementById(id);
@@ -20,8 +12,6 @@ export default function Header() {
         }
     };
 
-    const t = langData[lang];
-
     return (
         <header className="header">
             <div className="container header-inner">
@@ -32,20 +22,17 @@ export default function Header() {
 
                 <nav className="nav">
                     <ul>
-                        <li><a onClick={() => scrollTo("home")}>{t.home}</a></li>
-                        <li><a onClick={() => scrollTo("about")}>{t.about}</a></li>
-                        <li><a onClick={() => scrollTo("projects")}>{t.projects}</a></li>
+                        <li><a onClick={() => scrollTo("home")}>Главная</a></li>
+                        <li><a onClick={() => scrollTo("about")}>Обо мне</a></li>
+                        <li><a onClick={() => scrollTo("projects")}>Проекты</a></li>
                     </ul>
                 </nav>
 
 
                 <div className="right">
                     <a className="contactMe" onClick={() => scrollTo("contact")}>
-                        {t.contact}
+                        Связаться
                     </a>
-                    <div className="lang" onClick={toggleLang}>
-                        <p>{lang === "ru" ? "EN" : "RU"}</p>
-                    </div>
                 </div>
 
 

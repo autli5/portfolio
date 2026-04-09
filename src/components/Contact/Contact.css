@@ -1,0 +1,167 @@
+/* Основная секция */
+.contact {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #0a0a0a;
+}
+
+.contact-wrapper {
+    display: grid;
+    gap: 40px;
+    align-items: start;
+}
+
+/* Левая колонка */
+.contact-info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-header {
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.contact-description {
+    font-size: 16px;
+    color: #99a1af;
+    line-height: 1.6;
+    max-width: 60%;
+}
+
+/* Карточки контактов */
+.contact-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    background-color: rgba(183, 183, 183, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-card:hover {
+    background-color: rgba(183, 183, 183, 0.15);
+    transform: translateY(-2px);
+    border-color: rgba(0, 255, 136, 0.2);
+}
+
+.card-icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #00ff88, #00ffaa);
+    border-radius: 12px;
+    padding: 14px;
+}
+
+.card-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%);
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.card-label {
+    font-size: 14px;
+    color: #99a1af;
+    font-weight: 400;
+}
+
+.card-value {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Карта */
+.map-container {
+    background-color: rgba(183, 183, 183, 0.1);
+    border-radius: 12px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+}
+
+.map-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    color: #99a1af;
+}
+
+.map-icon {
+    width: 48px;
+    height: 48px;
+    filter: invert(47%) sepia(96%) saturate(2878%) hue-rotate(127deg) brightness(118%) contrast(119%);
+}
+
+.map-placeholder span {
+    font-size: 16px;
+}
+
+/* Адаптивность */
+@media (max-width: 968px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-title {
+        font-size: 28px;
+    }
+    
+    .contact-description {
+        max-width: 100%;
+    }
+    
+    .contact-form-wrapper {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 60px 0;
+    }
+    
+    .contact-card {
+        padding: 16px;
+    }
+    
+    .card-icon {
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+    }
+}

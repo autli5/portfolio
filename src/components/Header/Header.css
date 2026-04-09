@@ -25,6 +25,7 @@
 }
 
 /* Навигация */
+
 .nav ul {
     display: flex;
     gap: 25px;
@@ -42,6 +43,20 @@
     color: #00ff88;
 }
 
+.right {
+    display: flex;
+    align-items: center;   /* вертикальное выравнивание */
+    gap: 15px;             /* расстояние между EN и кнопкой */
+}
+
+.lang {
+    font-size: 20px;
+}
+
+.lang:hover {
+    cursor: pointer;
+}
+
 /* Кнопка */
 .contactMe {
     background: linear-gradient(135deg, #00ff88, #00ffaa);
@@ -56,4 +71,5 @@
 .contactMe:hover {
     transform: translateY(-2px);
     box-shadow: 0 0 20px rgba(0,255,136,0.4);
+    cursor: pointer;
 }

@@ -50,7 +50,7 @@ export default function Home() {
                             </p>
 
                             <div className="buttons">
-                                <a href="#contact" className="btn primary">Связаться</a>
+                                <a onClick={() => scrollTo("contact")} className="btn primary" style={{ cursor: "pointer" }}>Связаться</a>
                                 <a className="btn outline" onClick={() => scrollTo("projects")} style={{ cursor: "pointer" }}>Проекты</a>
                             </div>
 

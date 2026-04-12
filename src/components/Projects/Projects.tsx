@@ -52,7 +52,7 @@ export default function Projects() {
                                 </div>
 
                                 <a href={project.link} target="_blank" rel="noreferrer">
-                                    <button className="view">View Project</button>
+                                    <button className="view">Перейти</button>
                                 </a>
                             </div>
                         </div>

@@ -55,6 +55,10 @@
     cursor: pointer;
 }
 
+.mobile-contact {
+    opacity: 0;
+}
+
 /* Кнопка */
 .contactMe {
     background: linear-gradient(135deg, #00ff88, #00ffaa);
@@ -130,6 +134,7 @@
     }
 
     .mobile-contact {
+        opacity: 1;
         display: flex;
         justify-content: center;
         padding-bottom: 20px;

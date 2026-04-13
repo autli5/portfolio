@@ -25,6 +25,7 @@ html {
 
 section {
     scroll-margin-top: 80px;
+    height: 100vh;
 }
 
 /* ширина */

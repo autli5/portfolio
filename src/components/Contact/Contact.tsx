@@ -45,16 +45,6 @@ export default function Contact() {
                                     <p className="card-value">+7 (922) 849-37-95</p>
                                 </div>
                             </div>
-
-                            <div className="contact-card">
-                                <div className="card-icon">
-                                    <img src={location} alt="Location" />
-                                </div>
-                                <div className="card-content">
-                                    <span className="card-label">Локация</span>
-                                    <p className="card-value">Оренбург, Россия</p>
-                                </div>
-                            </div>
                         </div>
 
                         <div className="map-container">
